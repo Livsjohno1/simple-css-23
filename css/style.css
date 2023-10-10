@@ -1,0 +1,78 @@
+body {
+    background-color: azure;
+    margin: 0;
+    /* uses flex to maintain vertical alignment  */
+    display: flex;
+    /* horizontal alignment  */
+    align-items: center;
+    /* vertical alignment  */
+    justify-content: center;
+    height: 100vh;
+}
+
+#master {
+    width: 700px;
+    height: 600px;
+    background-color: rgb(215, 244, 250);
+    filter: drop-shadow(0px 0px 10px gray);
+
+
+}
+
+#days-container {
+    display: flex;
+}
+
+.day {
+    width: 100px;
+    height: 100px;
+}
+.button:hover{
+background-color: rgb(170, 150, 189);
+}
+.button:active{
+    background-color: rgb(247, 138, 255);
+}
+
+h4 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #033855;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+#city-text {
+    font-size: 40px;
+    line-height: 40px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    margin: 0;
+    color: rgba(100%, 100%, 100%, 0.531);
+
+}
+
+#hero-container {  
+    /* parent must have relative positioning, as child has absolute positioning  */
+    position: relative;
+    width: 700px;
+    height: 500px;
+}
+
+.weather-icon {
+    width: 40px;
+    height: 40px;
+    /* use of both margins to center align without flex  */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#hero-image{
+    width: 700px;
+    height: 500px;
+    /* stop image from stretching  */
+    object-fit: cover;
+}
